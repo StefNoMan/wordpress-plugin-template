@@ -1,0 +1,189 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ 
+/** RESET STYLES BETHEME  */
+.sas-table tr:hover td {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+	background: none !important;
+	color: black !important;
+}
+.sas-table tr:hover td a {
+	color: #2991d6 !important;
+}
+.sas-table-wrapper {
+	clear: both;
+}
+
+
+/** STYLES */
+.sas-table {
+    border-spacing: 10px;
+    border-collapse: separate !important;
+}
+.sas-table td, .sas-table th {
+	padding: 2px !important;
+	text-align: center;
+	vertical-align: top;
+}
+.sas-table thead th {
+	background: #B8AD93;
+}
+.sas-table tbody td {
+	font-size: 11px;
+}
+
+.sas-table .midi, .sas-table .soir {
+	padding: 5px 0;
+}
+.sas-table .midi:before, .sas-table .soir:before {
+	color: white;
+	font-weight: bold;
+}
+.sas-table .midi {
+	background: white;
+	font-weight: bold;
+}
+.sas-table .midi:before {
+	content: "midi";
+}
+.sas-table .soir {
+	background: white;
+	font-weight: bold;
+}
+.sas-table .soir:before {
+	content: "soir";
+}
+.sas-table .date { 
+	font-weight: bold;
+	background: #ddd;
+	color: #888;
+	font-size: 16px;
+}
+.sas-table .sas-link {
+	color: #B8AD93;
+	font-size: 1em;
+}
+.sas-table .sas-link:hover {
+	color: black !important;
+}
+
+
+/** LEGENDE */
+.sas-table-legend {
+	font-weight: bold;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.sas-legend {
+	height: auto;
+	margin-bottom: 5px;
+	line-height: 18px;
+}
+.sas-legend-color {
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/** CLEARFIX */
+.sas-table-clearfix {
+	clear: both;
+}
+
+
+/** LARGE SCREEN */
+@media only screen and (min-width: 768px) {
+	/*.sas-table-content, .sas-table-legend {
+		float: left;
+	}
+	.sas-table-content {
+		width: 80%;
+	}
+	.sas-table-legend {
+		width: 20%;
+	}*/
+	.sas-table th {
+		font-weight:bold;
+		color:#fff !important;
+	}
+	.sas-table tbody td:empty {
+		visibility: hidden;
+	}
+	.sas-hide {
+		visibility: hidden;
+	}
+	.sas-table td, .sas-table th {
+		width: 14% !important;
+	}
+	.sas-legend {
+		width: 50%;
+		display: inline-block;
+	}
+}
+
+
+
+
+/** MEDIUM SCREEN */
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+	.sas-table thead {
+		display: none;
+	}
+	.sas-table tbody td {
+		display: block;  
+		text-align: center;
+		margin-bottom: 15px;
+		border: 1px solid #B8AD93;
+	}
+	.sas-table tbody td:before { 
+		background: #B8AD93;
+	    content: attr(data-th); 
+	    display: block;
+	    text-align:center;  
+	    font-weight: bold;
+	    color: white;
+  	}
+  	.sas-table tbody td:empty {
+  		display: none;
+  	}
+	.sas-table .sas-hide {
+		display: none;
+	}
+}
+
+
+/** SMALL SCREEN */
+@media only screen and (max-width: 479px) {
+
+	.sas-table thead {
+		display: none;
+	}
+	.sas-table tbody td {
+		display: block;  
+		text-align: center;
+		margin-bottom: 15px;
+		border: 1px solid #B8AD93;
+	}
+	.sas-table tbody td:before { 
+		background: #B8AD93;
+	    content: attr(data-th); 
+	    display: block;
+	    text-align:center;  
+	    font-weight: bold;
+	    color: white;
+  	}
+  	.sas-table tbody td:empty {
+  		display: none;
+  	}
+	.sas-table .sas-hide {
+		display: none;
+	}
+}
